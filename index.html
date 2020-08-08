@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Centro | Comodidad y Confort</title>
+  <meta name="description" content="Comodidad y Confort en el Centro de Santiago">
+</head>
+<body>
+  <!--Sistemas de grillas-->
+  <!--container,row,col-->
+  <nav>
+    <div class="container">
+      <h1>
+        <a href="index.html">
+          <img src="images/logo-hotel-centro.jpg" alt="Hotel Centro">
+        </a>
+      </h1>
+          <!--logo-->
+
+          <!--menu de navegacion-->
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#habitaciones">Habitaciones</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#promociones">Promociones</a></li>
+        <li><a href="restaurante.html">Restaurante</a></li>
+        <li><a href="#ubicacion">Ubicacion</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>  <!--.container-->
+  </nav>
+  <header>
+    <!--slider-->
+    <div class="bxslider">
+      <div><img src="images/frente-hotel.jpg" title="frente hotel centro"></div>
+    </div>
+    <!--formulario central-->
+    <form action="procesar-info.php" method="POST">
+      <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+      <input type="email" name="email" placeholder="mimail@mail.com" required>
+      <input type="tel" name="telefono" placeholder="Telefono: 54 9 xxx xxxxxx" >
+      <label for="check-in">Check-In</label>
+      <input type="date" id="check-in" name="check-in">
+      <label for="check-out">Check-Out</label>
+      <input type="date" id="check-out" name="check-out">
+      <select name="habitaciones">
+        <option value="hab1">Matrimonial</option>
+        <option value="hab2">Doble Twin</option>
+        <option value="hab3">Triple</option>
+        <option value="hab4">Suite</option>
+        <!--boton de enviar-->
+      </select>
+      <button type="submit">Enviar</button>
+    </form>
+  </header>
+  <!--contenido principal del sitio-->
+  <main>
+    <!--section y article de habitaciones-->
+    <section id="habitaciones">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Habitaciones</h2>
+          </div> <!--.col-12-->
+        </div> <!--.row-->
+        <div class="row">
+          <div class="col-3">
+            <article>
+              <h3>Matrimonial</h3>
+              <img src="images/doble-matrimonial.jpg" alt="habitacion-matrimonial" width="400">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eos voluptatem amet quia impedit.</p>
+              <a href="#modal-doble-matrimonial">Ver [+]</a>
+            </article>
+          </div> <!--.col-3-->
+          <div class="col-3">
+            <article>
+              <h3>Doble Twin</h3>
+              <img src="images/doble-twin.jpg" alt="doble-twin" width="400">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non eveniet placeat aliquid, similique nesciun.</p>
+              <a href="#modal-doble-twin"> Ver [+]</a>
+            </article>
+          </div> <!--.col-3-->
+          <div class="col-3">
+            <article>
+              <h3>Triple</h3>
+              <img src="images/hab-triple.jpg" alt="" width="400">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cumque possimus odio pariatur ipsam aspernatur.</p>
+              <a href="#modal-triple">Ver [+]</a>
+            </article>
+          </div> <!--.col-3-->
+          <div class="col-3">
+            <article>              
+              <h3>Suite</h3>
+              <img src="images/suite.jpg" alt="" width="400">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, molestiae cumque.</p>
+              <a href="#modal-suite">Ver [+]</a>
+            </article>
+          </div> <!--.col-3-->
+        </div><!--.row-->
+      </div> <!--.container-->
+    </section>
+    <!--completar section y article de servicios-->
+    <section id="servicios">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Servicios</h2>
+          </div> <!--.col-12-->
+        </div> <!--.row-->
+        <div class="row">
+          <div class="col-3">
+            <article>
+              <h3>Salon de Eventos y Conferencias</h3>
+              <img src="images/boda.jpg" alt="salon-de-eventos" width="300">                         
+            </article>
+          </div> <!--.col-3-->
+          <div class="col-3">
+            <article>
+              <h3>Sala de Estar y Lectura</h3>
+              <img src="images/sala-de-lectura.jpg" alt="" width="300">                        
+            </article>
+          </div> <!--.col-3-->
+          <div class="col-3">
+            <article>
+              <h3>Estacionamiento</h3>
+              <img src="images/estacionamiento.jpg" alt="" width="300">                            
+            </article>
+          </div> <!--.col-3-->
+          <div class="col-3">
+            <article>
+              <h3>Gimnasio</h3>
+              <img src="images/gimnasio.jpg" alt="" width="300">                          
+            </article>
+          </div> <!--.col-3-->
+        </div> <!--.row-->
+      </div> <!--.container-->
+
+    </section>
+    <!--slider-->
+    <aside id="opinion-clientes">
+      <img src="https://via.placeholder.com/1400x250?text=Opinión%20Clientes" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veritatis harum quae ex hic sapiente exercitationem earum enim at rerum explicabo voluptatum labore adipisci neque, doloremque praesentium ipsum, excepturi nemo.</p>
+      <p>nombre del cliente</p>
+    </aside>
+    <section id="promociones">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Promociones</h2>
+          </div> <!--.col-12-->   
+        </div> <!--.row-->      
+        <div class="row">
+          <div class="col-4">
+            <article>             
+              <h3>Temporada Baja</h3>
+              <img src="https://via.placeholder.com/150x100" alt="">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellendus, distinctio laboriosam perferendis deserunt omnis perspiciatis.</p>
+              <div>
+                <img src="images/logos/logo-habitacion.png" alt="" width="45">
+                <img src="images/logos/desayuno-logo.png" alt="" width="45">
+                <img src="images/logos/espacio-lectura.jpg" alt="" width="45">
+              </div>
+            </article>
+          </div>  <!--.col-4-->
+          <div class="col-4">
+            <article>             
+              <h3>Temporada Alta</h3>
+              <img src="https://via.placeholder.com/150x100" alt="">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellendus, distinctio laboriosam perferendis deserunt omnis perspiciatis.</p>
+              <div>
+                <img src="images/logos/logo-habitacion.png" alt="" width="45">
+                <img src="images/logos/desayuno-logo.png" alt="" width="45">
+                <img src="images/logos/logo-gimnasio.png" alt="" width="45">
+              </div>
+            </article>
+          </div>  <!--.col-4-->
+          <div class="col-4">
+            <article>
+              <h3>Especial</h3>
+              <img src="https://via.placeholder.com/150x100" alt="">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellendus, distinctio laboriosam perferendis deserunt omnis perspiciatis.</p>
+              <div>
+                <img src="images/logos/logo-estacionamiento.png" alt="" width="45">
+                <img src="images/logos/logo-gimnasio.png" alt="" width="45">
+                <img src="images/logos/logo-habitacion.png" alt="" width="45">
+                <img src="images/logos/desayuno-logo.png" alt="" width="45">
+                <img src="images/logos/espacio-lectura.jpg" alt="" width="45">
+              </div>
+            </article>
+          </div>  <!--.col-4-->
+        </div> <!--.row-->
+      </div> <!--.container-->
+    </section>
+    <!--mapa-->
+    <div id="ubicacion">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.6669669253633!2d-64.26071128434604!3d-27.789233982758187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b5211bdb3fecb%3A0xa94fe0625652960c!2sHotel%20Centro!5e0!3m2!1ses!2sar!4v1595871106329!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+  </main>
+  <footer>
+    <aside id="contacto">
+      <div class="container">
+        <div class="row">
+          <!--caja izquierda-->
+          <div class="col-3">
+            <img src="images/logo-hotel-centro.jpg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id velit in atque sunt voluptatibus quidem dolore.</p>
+          </div> <!--.col-3-->
+          <div class="col-9">
+            <form action="procesar-info.php" method="POST">
+              <input type="text" placeholder="Nombre y Apellido" required>
+              <input type="email" placeholder="Email" required>
+              <textarea name="dejanos tu consulta" id="consultas" cols="30" rows="10">Dejanos tu consulta</textarea>
+              <input type="submit" value="Enviar mensaje">
+            </form>
+          </div> <!--.col-9-->
+          <div class="col-12">
+            <a href="tel:5492613358250">5492613358250</a>
+            <a href="mailto:info@hotelcentro.com">info@hotelcentro.com</a>
+            <a href="https://api.whatsapp.com/send?phone=5492613358250&text=Gracias%20por%20tu%20consulta,%20en%20breve%20nos%20pondremos%20en%20contacto.">Whatsapp</a>
+          </div>
+        </div><!--.row-->
+      </div><!--.container-->
+    </aside>
+  </footer>
+
+
+  
+  <!--ventanas modales-->
+  <div id="modal-doble-matrimonial" class="modal_mask">
+    <div>
+      <h3>Matrimonial</h3>
+      <img src="images/doble-matrimonial.jpg" alt="" width="450">     
+      <p>Equipada con frigobar, caja de seguridad, aire acondicionado y calefacción individual tipo split (silencioso), secador de cabello, LCD con señal cable, y un amplio confortable espacio interior</p>
+    </div>
+  </div>
+  <div id="modal-doble-twin" class="modal-mask">
+    <div>
+      <h3>Doble Twin</h3>
+      <img src="images/doble-twin.jpg" alt="" width="450">     
+      <p>Equipada con frigobar, caja de seguridad, aire acondicionado y calefacción individual tipo split (silencioso), secador de cabello, LCD con señal cable, y un amplio confortable espacio interior</p>
+    </div>
+  </div>
+  <div id="modal-triple" class="modal-mask">
+    <div>
+      <h3>Triple</h3>
+      <img src="images/hab-triple.jpg" alt="" width="450">     
+      <p>Equipada con frigobar, caja de seguridad, aire acondicionado y calefacción individual tipo split (silencioso), secador de cabello, LCD con señal cable, y un amplio confortable espacio interior</p>
+    </div>
+  </div>
+  <div id="modal-suite" class="modal-mask">
+    <div>
+      <h3>Suite</h3>
+      <img src="images/suite.jpg" alt="" width="450">     
+      <p>Equipada con frigobar, caja de seguridad, aire acondicionado y calefacción individual tipo split (silencioso), secador de cabello, LCD con señal cable, y un amplio confortable espacio interior</p>
+    </div>
+  </div>
+  
+  
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Centro | Gastronomia</title>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <h1>
+        <a href="restaurante.html">
+          <img src="images/logo-hotel-centro.jpg" alt="Hotel Centro">
+        </a>
+      </h1>
+          <!--logo-->
+
+          <!--menu de navegacion-->
+      <ul>
+        <li><a href="restaurante.html">Inicio</a></li>
+        <li><a href="#restaurante">Restaurante</a></li>
+        <li><a href="#bar-americano">Bar Americano</a></li>
+      </ul>
+    </div>  <!--.container-->
+  </nav>
+  <header>
+    <!--slider-->
+    <div class="bxslider">
+      <div><img src="images/frente-hotel.jpg" title="frente hotel centro"></div>
+    </div>
+    <!--formulario central-->
+    <form action="procesar-info.php" method="POST">
+      <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+      <input type="email" name="email" placeholder="mimail@mail.com" required>
+      <input type="tel" name="telefono" placeholder="Telefono: 54 9 xxx xxxxxx" >
+      <label for="check-in">Check-In</label>
+      <input type="date" id="check-in" name="check-in">
+      <label for="check-out">Check-Out</label>
+      <input type="date" id="check-out" name="check-out">
+      <select name="habitaciones">
+        <option value="restaurante">Restaurante</option>
+        <option value="bar-americano">Bar Americano</option>
+        <!--boton de enviar-->
+      </select>
+      <button type="submit">Enviar</button>
+    </form>
+  </header>
+  <!--slider en tanto en restaurante como bar americano-->
+  <main>
+    <section id="restaurante">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Restaurante</h2>
+          </div>  <!--.col-12-->
+        </div> <!--.row-->
+        <div class="row">
+          <div class="col-12">
+            <div class="bxslider">
+              <div>
+                <img src="images/restaurante-01.jpg" alt="restaurante-01" width="450">
+                <img src="images/restaurante-02.jpg" alt="restaurante-02" width="450">
+              </div>
+            </div><!--.bxslider-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, quae sequi exercitationem nostrum iusto quo ipsam culpa ratione ullam est deserunt vel delectus officiis.</p>
+          </div> <!--.col-12-->
+        </div> <!--.row-->
+      </div> <!--.container-->
+    </section>
+    <section id="bar-americano">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Bar Americano</h2>
+          </div><!--.col-12-->
+        </div><!--.row-->
+        <div class="row">
+          <div class="col-12">
+            <div class="bxslider">
+              <div>
+                <img src="images/bar-americano.jpg" alt="bar-americano" width="450">
+                <img src="images/desayuno.jpg" alt="desayuno" width="450">
+              </div>
+            </div><!--.bxslider-->
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptas sit eum in fugit? Delectus inventore adipisci ratione.</p>
+          </div><!--.col-12-->
+        </div><!--.row-->
+      </div><!--.container-->
+    </section>
+
+    <!--mapa-->
+    <div id="ubicacion">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.6669669253633!2d-64.26071128434604!3d-27.789233982758187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b5211bdb3fecb%3A0xa94fe0625652960c!2sHotel%20Centro!5e0!3m2!1ses!2sar!4v1595871106329!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+  </main>
+  <footer>
+    <aside id="contacto">
+      <div class="container">
+        <div class="row">
+          <!--caja izquierda-->
+          <div class="col-3">
+            <img src="images/logo-hotel-centro.jpg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id velit in atque sunt voluptatibus quidem dolore.</p>
+          </div> <!--.col-3-->
+          <div class="col-9">
+            <form action="procesar-info.php" method="POST">
+              <input type="text" placeholder="Nombre y Apellido" required>
+              <input type="email" placeholder="Email" required>
+              <textarea name="dejanos tu consulta" id="consulta" cols="30" rows="10"> Dejanos Tu Consulta</textarea>
+              <input type="submit" value="Enviar mensaje">
+            </form>
+          </div> <!--.col-9-->
+          <div class="col-12">
+            <a href="tel:5492613358250">5492613358250</a>
+            <a href="mailto:info@hotelcentro.com">info@hotelcentro.com</a>
+            <a href="https://api.whatsapp.com/send?phone=5492613358250&text=Gracias%20por%20tu%20consulta,%20en%20breve%20nos%20pondremos%20en%20contacto.">Whatsapp</a>
+          </div>
+        </div><!--.row-->
+      </div><!--.container-->
+    </aside>
+  </footer>
+</body>
+</html>
